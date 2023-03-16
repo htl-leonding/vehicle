@@ -4,6 +4,12 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "X_VEHICLE")
+//@NamedQueries({
+@NamedQuery(
+        name = "Vehicle.findAll",
+        query = "select v from Vehicle v"
+)
+//})
 public class Vehicle {
 
     @Id @GeneratedValue(strategy = GenerationType.SEQUENCE)

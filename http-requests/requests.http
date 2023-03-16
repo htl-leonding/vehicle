@@ -2,8 +2,16 @@
 
 GET http://localhost:8080/vehicle/23
 
-### find by id
+### person find by id
 
 GET http://localhost:8080/persons/1
+
+### vehicle find by id
+
+GET http://localhost:8080/vehicles/1
+
+### find all vehicles
+
+GET http://localhost:8080/vehicles
 
 ###

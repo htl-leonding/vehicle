@@ -4,5 +4,4 @@ public record VehicleDto (
         Long id,
         String model,
         String brand
-) {
-}
+) { }
