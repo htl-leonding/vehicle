@@ -1,0 +1,9 @@
+### find
+
+GET http://localhost:8080/vehicle/23
+
+### find by id
+
+GET http://localhost:8080/persons/1
+
+###
