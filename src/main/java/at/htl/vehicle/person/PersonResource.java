@@ -13,10 +13,13 @@ public class PersonResource {
     @Inject
     PersonDao personDao;
 
+    @Inject
+    PersonMapper personMapper;
+
     @GET
     @Path("{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Person findById(@PathParam("id") long id) {
-        return personDao.findById(id);
+    public PersonDto findById(@PathParam("id") long id) {
+        return personMapper.fromEntity(personDao.findById(id));
     }
 }
