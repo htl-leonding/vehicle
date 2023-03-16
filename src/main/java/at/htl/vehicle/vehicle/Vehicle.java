@@ -1,9 +1,17 @@
 package at.htl.vehicle.vehicle;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "X_VEHICLE")
 public class Vehicle {
 
+    @Id @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @Column(name = "V_ID")
     private Long id;
+    @Column(name = "V_MODEL", nullable = false)
     private String model;
+    @Column(name = "V_BRAND", nullable = false)
     private String brand;
 
     //region constructors
