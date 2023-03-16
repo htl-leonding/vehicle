@@ -31,6 +31,10 @@ public class VehicleDao {
                 .getResultList();
     }
 
+    public void persist(Vehicle vehicle) {
+        em.persist(vehicle);
+    }
+
 //    public List<Vehicle> findAll2() {
 //        TypedQuery<Vehicle> query = em
 //                .createQuery(
