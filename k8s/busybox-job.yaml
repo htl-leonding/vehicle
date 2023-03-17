@@ -18,7 +18,7 @@ spec:
         command: ["/bin/sh", "-c"]
         args: 
           - mkdir -p /srv/demo;
-            echo "<html><head></head><body>Copy your web app to this location on this persistent volume.<br/>To the api ==> <a href="./api/user">./api/user</a></body></html>" > /srv/demo/index.html;
+            echo "<html><head></head><body>Copy your web app to this location on this persistent volume.<br/>To the api ==> <a href="./api/vehicles">./api/vehicles</a></body></html>" > /srv/demo/index.html;
             sleep 900;
             echo done;
         volumeMounts:
