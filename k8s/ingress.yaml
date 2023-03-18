@@ -11,14 +11,21 @@ spec:
     - host: student.cloud.htl-leonding.ac.at
       http:
         paths:
-          - path: /caberger
+          - path: /t.stuetz
             pathType: Prefix
             backend:
               service:
                 name: nginx
                 port:
                   number: 80
-          - path: /caberger/(.*)$
+          - path: /t.stuetz/(.*)$
+            pathType: Prefix
+            backend:
+              service:
+                name: nginx
+                port:
+                  number: 80
+          - path: /t.stuetz/(.*)$
             pathType: Prefix
             backend:
               service:

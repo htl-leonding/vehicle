@@ -5,7 +5,7 @@ metadata:
   name: appsrv
 
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: appsrv
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: appsrv
-          image: ghcr.io/htl-leonding/vehicle:latest
+          image: ghcr.io/r-reder-htl/vehicle:latest
           # remove this when stable. Currently we do not take care of version numbers
           imagePullPolicy: Always
           ports:
